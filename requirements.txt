@@ -1,0 +1,4 @@
+transformers~=4.45.2
+torch~=2.5.0
+scapy~=2.6.0
+psutil~=6.1.0
