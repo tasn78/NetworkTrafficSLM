@@ -1,6 +1,7 @@
 import psutil
 import socket
 from scapy.all import sniff
+from scapy.layers.inet import IP, TCP
 
 def get_active_interface():
     # Get network interfaces and their stats

@@ -1,9 +1,7 @@
-from scapy.all import sniff, get_if_list
+from transformers import pipeline
 
-def print_packet(packet):
-    print(f"Packet received on interface: {packet.sniffed_on}")
+# Load your SLM model
+nlp_model = pipeline("text-classification", model="rdpahalavan/bert-network-packet-flow-header-payload", framework="pt")
 
-print("Monitoring traffic on available interfaces...")
-for iface in get_if_list():
-    print(f"Monitoring interface: {iface}")
-    sniff(iface=iface, prn=print_packet, store=False, count=10)
+# Print model metadata
+print(nlp_model.model.config.id2label)

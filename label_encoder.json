@@ -1,0 +1,17 @@
+{
+    "classes": [
+        "Benign",
+        "Bot",
+        "DDoS",
+        "DoS GoldenEye",
+        "DoS Hulk",
+        "DoS Slowhttptest",
+        "DoS Slowloris",
+        "FTP-Patator",
+        "Infiltration",
+        "SSH-Patator",
+        "Web Attack Brute Force",
+        "Web Attack Sql Injection",
+        "Web Attack XSS"
+    ]
+}

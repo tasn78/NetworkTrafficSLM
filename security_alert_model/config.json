@@ -1,0 +1,95 @@
+{
+  "_name_or_path": "google/flan-t5-base",
+  "architectures": [
+    "T5ForSequenceClassification"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 2048,
+  "d_kv": 64,
+  "d_model": 768,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "gelu_new",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "gated-gelu",
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2",
+    "3": "LABEL_3",
+    "4": "LABEL_4",
+    "5": "LABEL_5",
+    "6": "LABEL_6",
+    "7": "LABEL_7",
+    "8": "LABEL_8",
+    "9": "LABEL_9",
+    "10": "LABEL_10",
+    "11": "LABEL_11",
+    "12": "LABEL_12",
+    "13": "LABEL_13"
+  },
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_10": 10,
+    "LABEL_11": 11,
+    "LABEL_12": 12,
+    "LABEL_13": 13,
+    "LABEL_2": 2,
+    "LABEL_3": 3,
+    "LABEL_4": 4,
+    "LABEL_5": 5,
+    "LABEL_6": 6,
+    "LABEL_7": 7,
+    "LABEL_8": 8,
+    "LABEL_9": 9
+  },
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 12,
+  "num_heads": 12,
+  "num_layers": 12,
+  "output_past": true,
+  "pad_token_id": 0,
+  "problem_type": "single_label_classification",
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.45.2",
+  "use_cache": true,
+  "vocab_size": 32128
+}

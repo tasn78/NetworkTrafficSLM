@@ -1,0 +1,1 @@
+{"DDoS": 0, "DoS Hulk": 1, "Bot": 2, "FTP-Patator": 3, "SSH-Patator": 4, "Infiltration": 5, "DoS Slowhttptest": 6, "DoS GoldenEye": 7, "DoS Slowloris": 8, "Web Attack Brute Force": 9, "Web Attack XSS": 10, "Web Attack Sql Injection": 11, "Benign": 12, "Unknown": 13}

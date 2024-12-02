@@ -1,0 +1,2 @@
+Total Records Analyzed,Malicious Records Detected,Detection Rate (%),Unique Attack Types,Average SLM Score,Test Duration (minutes),Test Start Time,Test End Time
+10000,3857,38.57,9,0.8486044048289422,5.1354464,2024-12-01 23:49:27,2024-12-01 23:54:35
